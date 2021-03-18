@@ -15,12 +15,15 @@
   "author": "Jordan <jerlends_0x0@protonmail.com> (https://jerlends.com)",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "glslify": "^7.1.1",
     "three": "^0.126.1",
     "three-vignette-background": "^1.0.3",
     "vue": "^2.6.12"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.1",
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
