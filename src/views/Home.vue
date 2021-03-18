@@ -41,9 +41,6 @@
 <script>
 import * as THREE from "three";
 
-// import vertex from "../assets/glsl/gradient/vertex.js";
-// import fragment from "../assets/glsl/gradient/fragment.js";
-
 export default {
     name: "Home",
 
