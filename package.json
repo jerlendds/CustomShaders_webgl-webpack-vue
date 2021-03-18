@@ -1,0 +1,31 @@
+{
+  "name": "karamja",
+  "version": "1.0.0",
+  "description": "An example Vue WebGL app using webpack. (Be aware this is a learning project and may not follow best practices!)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jerlendds/"
+  },
+  "main": "src/main.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "serve": "webpack serve --hot --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "Jordan <jerlends_0x0@protonmail.com> (https://jerlends.com)",
+  "license": "MIT",
+  "dependencies": {
+    "glslify": "^7.1.1",
+    "three": "^0.126.1",
+    "three-vignette-background": "^1.0.3",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
