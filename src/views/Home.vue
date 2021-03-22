@@ -1,7 +1,7 @@
 <template>
     <section
         ref="canvas"
-        style="width: 100%; height: 100vh;"
+        class="canvas-container"
     >
         <script
             ref="vertexShader"
@@ -20,7 +20,7 @@
 
 			}
 
-</script>
+        </script>
 
         <script
             ref="fragmentShader"
@@ -30,11 +30,11 @@
 
             void main()	{
 
-				gl_FragColor = vec4( 1.0, 0.0, 0.0, 1.0 );
+				gl_FragColor = vec4( 1.0, 0.3, 0.1, 1.0 );
 
 			}
 
-</script>
+        </script>
     </section>
 </template>
 
@@ -67,7 +67,6 @@ export default {
             this.width = this.$refs.canvas.offsetWidth;
             this.height = this.$refs.canvas.offsetHeight;
             this.aspect = this.width / this.height;
-            console.log(this.height, this.width);
 
             this.scene = new THREE.Scene();
             this.camera = new THREE.OrthographicCamera(
@@ -113,7 +112,7 @@ export default {
 
         addCube() {
             const geometry = new THREE.BoxGeometry();
-            const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+            const material = new THREE.MeshBasicMaterial({ color: 0x41a061 });
             this.cube = new THREE.Mesh(geometry, material);
             this.scene.add(this.cube);
 
@@ -177,3 +176,11 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.canvas-container {
+    background-color: #4159a0;
+    width: 100%;
+    height: 100vh;
+}
+</style>

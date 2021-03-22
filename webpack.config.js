@@ -1,7 +1,6 @@
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader') // https://vue-loader.vuejs.org/
 const HtmlWebPackPlugin = require('html-webpack-plugin'); // https://webpack.js.org/plugins/html-webpack-plugin/
-var nodeModulesPath = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
     entry: {
@@ -30,8 +29,11 @@ module.exports = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
 
-            }
-
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
         ]
     },
     plugins: [
